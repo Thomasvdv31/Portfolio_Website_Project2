@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <script src="https://kit.fontawesome.com/598ad5b46d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-transparant">
@@ -43,6 +46,158 @@
           </div>
         </div>
       </nav>
+
+      <header class="text-light text-left py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="blur"></span>
+                    <span class="blur"></span>
+                    <a class="arrow" href=""><i class="fa-solid fa-arrow-up"></i></a>
+                    <h1>Curriculum<span> Vitae</span></h1>
+                    <p>On this page, you'll find a comprehensive showcase of my Curriculum Vitae, highlighting my educational background, skills, and professional experience. </p>
+                </div>
+            </div>
+        </div>
+    </header>
+      
+
+    <div class="container my-5" id="cv-form">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="avatar text-center">
+                    <img src="../img/thomas_gradientV2_low_key.png" alt="profile picture" class="img-fluid rounded-circle">
+                </div>
+                <div class="name text-center my-3">
+                    <h1>Thomas Van de Ven</h1>
+                    <div class="specialize">Fullstack Developer</div>
+                </div>
+                <ul class="list-unstyled contact">
+                    <li>
+                        <span>P</span> +32 (0)4 69309399
+                    </li>
+                    <li>
+                        <span>E</span> thomas.vdv@hotmail.com
+                    </li>
+                    <li>
+                        <span>W</span> <a href="https://www.thomasvdv-portfolio.be" target="_blank">thomasvdv-portfolio.be</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 info">
+                <ul class="list-unstyled">
+                    <li>
+                        From <b>Antwerp</b> - Belgium
+                    </li>
+                    <li>
+                        31/12/1991
+                    </li>
+                    <li>
+                        Thomas More Geel
+                    </li>
+                </ul>
+                <div class="intro my-4">
+                    <h2>INTRO</h2>
+                    <p>
+                        I am a programming student at Thomas More University with a strong ambition to become a proficient software developer. Eager to learn and grow, I am dedicated to honing my skills and knowledge in programming. My coursework at Thomas More, along with my passion for coding, has equipped me with a solid foundation in software development. I am now seeking opportunities to further develop my skills and contribute to innovative software projects.
+                    </p>
+                </div>
+                <div class="exp">
+                    <h2>EXPERIENCE</h2>
+                    <div class="item">
+                        <h4>CNC operator</h4>
+                        <div class="time">
+                            <span>2012 - 2016</span>
+                            <span>Kempa</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h4>Software Consultant</h4>
+                        <div class="time">
+                            <span>2016 - 2020</span>
+                            <span>ECI Software Consultant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <ul class="list-unstyled">
+                        <li>HTML/CSS</li>
+                        <li>Javascript</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h2>EDUCATION</h2>
+                    <div class="item">
+                        <h4>Professionele Houtbewerking</h4>
+                        <h4>Specialisatiejaar voor Industriële-houtbewerking</h4>
+                        <h4>CNC Operator</h4>
+                        <h4>Solidworks 3D CAD software</h4>
+                        <div class="location">Vrij Technisch Instituut Zandhoven</div>
+                        <div class="time">2003 - 2012</div>
+                    </div>
+                    <div class="item">
+                        <h4>Inhouse opleiding software consultant</h4>
+                        <div class="location">CNCWare</div>
+                        <div class="time">2015 - 2016</div>
+                    </div>
+                    <div class="item">
+                        <h4>Graduaat Programmeren</h4>
+                        <div class="location">Thomas More Geel</div>
+                        <div class="time">2023 - ****</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Skills</h2>
+        <div id="skillsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item - active">
+                    <div class="row">
+                        <div class="col-4 my-2">
+                            <img src="../img/skills/html.png" alt="HTML" class="img-fluid w-50 mx-auto">
+                        </div>
+                        <div class="col-4 my-2">
+                            <img src="../img/skills/css-3.png" alt="CSS" class="img-fluid w-50 mx-auto">
+                        </div>
+                        <div class="col-4 my-2">
+                            <img src="../img/skills/database.png" alt="SQL" class="img-fluid w-50 mx-auto">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="../img/skills/c-sharp.png" alt="Csharp" class="img-fluid w-50 mx-auto">
+                        </div>
+                        <div class="col-4">
+                            <img src="../img/skills/js.png" alt="CSS" class="img-fluid w-50 mx-auto">
+                        </div>
+                        <div class="col-4">
+                            <img src="../img/skills/python.png" alt="SQL" class="img-fluid w-50 mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#skillsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Vorige</span>
+            </a>
+            <a class="carousel-control-next" href="#skillsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Volgende</span>
+            </a>
+        </div>
+    </div>
+    </div>
+    
+        
+
+
    
       <footer class="footcontainer">
         <div class="footer-content">
