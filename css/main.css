@@ -396,7 +396,8 @@ footer .column > a:hover{
 }
 
 /*------------------------------------------------------------ PROGRESS -------------------------------------------------------*/
-section {
+.container-progress {
+    max-width: 900px;
     margin: auto;
     padding-top: 5rem;
     margin-bottom: 2rem;
@@ -407,7 +408,7 @@ section {
     padding-right: 10px; /* Add padding on the right side */
 }
 
-.container caption{
+.container-progress caption{
     color: #ccc;
 }
 
@@ -442,7 +443,7 @@ caption {
 
 /* Add a media query for screens smaller than 768px (adjust as needed) */
 @media (max-width: 768px) {
-    .wrapper {
+    .container-progress {
         padding: 5px; /* Reduce padding for small screens */
     }
 
