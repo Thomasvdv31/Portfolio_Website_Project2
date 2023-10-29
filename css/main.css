@@ -294,10 +294,10 @@ footer .column > a:hover{
     text-align: center;
 }
 
-/* CV */
+/*---------------------------------------------------------- CV ---------------------------------------------------------*/
 
 .carousel-item {
-    padding: 20px; /* Adjust this value to increase or decrease the spacing */
+    padding: 20px; 
 }
 
 .avatar img{
@@ -319,7 +319,7 @@ footer .column > a:hover{
     content: "";
     display: block;
     border-bottom: 1px solid #1d4ed8;
-    width: 50%; /* Set an initial width if needed */
+    width: 50%; 
     position: absolute;
     bottom: 0;
 }
@@ -364,8 +364,8 @@ footer .column > a:hover{
 .skills h4::before,
 .education h4::before {
     position: relative;
-    content: "\2022"; /* Unicode character for bullet (•) */
-    color: #1d4ed8; /* Blue color */
+    content: "\2022"; 
+    color: #1d4ed8; 
     display: inline-block;
     left: -35px;
     
@@ -379,11 +379,9 @@ footer .column > a:hover{
 }
 
 
-
-/* Custom grey background color for progress bars */
 .bg-grey {
-    background-color: #1d4ed8; /* Use your preferred shade of grey */
-    color: #ccc; /* Text color on the grey background */
+    background-color: #1d4ed8; 
+    color: #ccc; 
     
     background-image: none;
 }
