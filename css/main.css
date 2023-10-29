@@ -167,11 +167,16 @@ section p{
 .container .image{
     position: relative;
 }
+@media (max-width: 767px) {
+    .container .image {
+        display: none;
+    }
+}
 
 
 
 .container .image img{
-    max-width: 600px;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -305,5 +310,106 @@ footer .column > a:hover{
 #cv-form{
     color: #ccc;
 }
+
+#cv-form h2 {
+    position: relative;
+}
+
+#cv-form h2::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #1d4ed8;
+    width: 50%; /* Set an initial width if needed */
+    position: absolute;
+    bottom: 0;
+}
+
+.education{
+    padding-left: 30px;
+    text-align: justify;
+    border-left: 1px solid #1d4ed8;
+}
+
+.exp{
+    padding-left: 30px;
+    text-align: justify;
+    border-left: 1px solid #1d4ed8;
+}
+
+.exp span,
+.location,
+.time{
+    padding-left: 30px;
+    
+}
+
+.item{
+    padding-bottom: 20px;
+}
+
+.skills {
+    padding-left: 30px;
+    border-left: 1px solid #1d4ed8;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.skills h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.intro h4::before,
+.exp h4::before,
+.skills h4::before,
+.education h4::before {
+    position: relative;
+    content: "\2022"; /* Unicode character for bullet (•) */
+    color: #1d4ed8; /* Blue color */
+    display: inline-block;
+    left: -35px;
+    
+    
+}
+
+.item h4 {
+    white-space: nowrap;
+    overflow-wrap: break-word;
+    
+}
+
+
+
+/* Custom grey background color for progress bars */
+.bg-grey {
+    background-color: #1d4ed8; /* Use your preferred shade of grey */
+    color: #ccc; /* Text color on the grey background */
+    
+    background-image: none;
+}
+
+.progress{
+    background-color: transparent;
+    border: 1px solid #1d4ed8;
+}
+
+#skillsCarousel h2{
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
