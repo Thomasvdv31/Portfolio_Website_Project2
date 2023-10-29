@@ -395,6 +395,64 @@ footer .column > a:hover{
     color: #ccc;
 }
 
+/*------------------------------------------------------------ PROGRESS -------------------------------------------------------*/
+section {
+    margin: auto;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+    padding: 10px; /* Add some padding for better mobile display */
+    box-sizing: border-box; /* Include padding in the total width */
+    padding-left: 10px; /* Add padding on the left side */
+    padding-right: 10px; /* Add padding on the right side */
+}
+
+.container caption{
+    color: #ccc;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    border: 2px solid #ccc;
+    padding: 5px;
+}
+
+#tabledate {
+    width: 100px;
+}
+
+#tableprogress {
+    width: 100px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 20px;
+}
+
+/* Add a media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 5px; /* Reduce padding for small screens */
+    }
+
+    table {
+        font-size: 12px; /* Reduce font size for small screens */
+    }
+
+    
+}
+
 
 
 
