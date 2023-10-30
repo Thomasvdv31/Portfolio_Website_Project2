@@ -105,8 +105,6 @@ img{
     align-items: center;
     gap: 2rem;
    
-   
-
     
 }
 
@@ -222,7 +220,7 @@ section .header{
     margin: 0 auto; 
     text-align: center; 
 }
-/*----------------------------------------------------footer------------------------------------------------*/
+/*---------------------------------------------------------- FOOTER ------------------------------------------------------------*/
 .footer-content{
     display: flex;
     flex-wrap: wrap;
@@ -484,9 +482,6 @@ input[type=checkbox]:checked ~ label > img{
 
 
 
-
-
-
 .portfolio-content .row p{
     margin-bottom: 1rem;
     color: #ccc;
@@ -524,7 +519,7 @@ input[type=checkbox]:checked ~ label > img{
     margin: 0 auto; /* Center the images horizontally */
 }
 
-/* -------------------------------------Skill Bar------------------------------------- */
+/* --------------------------------------------------------Skill Bar--------------------------------------------------------- */
 /* Styling for the skill container */
 .skill{
     width: 500px;
@@ -635,6 +630,329 @@ input[type=checkbox]:checked ~ label > img{
         width: 80%;
     }
 }
+/*------------------------------------------------ contact form -------------------------------------------------*/
+#contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 100%;
+    margin-top: -150px;
+}
+
+
+
+.container2 {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    overflow: hidden;
+    
+}
+
+.container2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    
+    pointer-events: none;
+}
+
+.container2 h2{
+    width: 100%;
+    text-align: center;
+    color: #ccc;
+    font-size: 36px;
+    margin-bottom: 20px ;
+}
+
+.container2 .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+}
+
+.container2 .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 20px;
+
+}
+
+.container2 .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #ccc;
+}
+
+.container2 .row100 .col .inputBox input,
+.container2 .row100 .col .inputBox textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+
+.container2 .row100 .col .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+/* When input or textarea is focused or has a value, move the text above the input */
+.container2 .row100 .col .inputBox input:focus + .text,
+.container2 .row100 .col .inputBox input:valid + .text,
+.container2 .row100 .col .inputBox textarea:focus + .text,
+.container2 .row100 .col .inputBox textarea:valid + .text{
+    top: -35px;
+    left: -10px;
+
+}
+
+/* Styling for the line below the input */
+.container2 .row100 .col .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1%;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 1px;
+    pointer-events: none;
+    
+}
+
+/* When input is focused or has a value, expand the line below the input */
+.container2 .row100 .col .inputBox input:focus ~ .line,
+.container2 .row100 .col .inputBox input:valid ~ .line{
+    height: 100%;
+}
+
+/* Styling for the textarea input */
+.container2 .row100 .col .inputBox.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+    resize: none;
+}
+
+ /* Remove textarea resize handle */
+.container2 .row100 .col .inputBox.textarea textarea{
+    resize: none;
+}
+
+/* When textarea is focused or has a value, expand the line below the input */
+.container2 .row100 .col .inputBox textarea:focus ~ .line,
+.container2 .row100 .col .inputBox textarea:valid ~ .line{
+    height: 100%;
+}
+
+.container2 .row100 .col input[type=submit]{
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    outline: none;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.select-text{
+    color: #ccc;
+    margin-bottom: none;
+
+}
+
+.select-skills{
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    color: #ccc;
+}
+
+select option {
+    margin: 40px;
+    background: #18181B;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+#contact-info p {
+    margin: 5px 0;
+    line-height: 1;
+    padding: 5px;
+}
+
+.contact-info-container {
+    max-height: 300px; /* Set a maximum height as per your design */
+    overflow: auto; /* Add scrollbars if content overflows */
+    border-left: 1px solid #fff;
+    padding-left: 30px;
+  
+}
+
+#header-contact{
+    margin-bottom: 100px;
+}
+
+
+
+#header-contact #social-contact-link{
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    top: -10px;
+}
+
+#header-contact a:hover{
+    color: #fff;
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+
+/*------------------------------------------------ hobby carousel ----------------------------------------------------------------*/
+
+
+
+.position-relative{
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
+}
+
+.indicator-container{
+    position: relative;
+    bottom: -520px;
+
+}
+
+.control-container{
+    position: relative;
+    top: -350px;
+    z-index: 10;
+    
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231d4ed8' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231d4ed8' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+
+
+/*---------------------------------------------------- Hobby --------------------------------------------------*/
+
+.column.images {
+    margin-right: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column.images .photo {
+    margin-bottom: 12px; 
+}
+
+.column.images .photo img {
+    width: 300px; 
+    height: auto;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 3px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

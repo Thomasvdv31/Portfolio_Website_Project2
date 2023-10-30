@@ -42,29 +42,107 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
 
 
-      <header class="text-light text-left py-5">
+    <header class="text-light text-left py-5" id="header-contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <span class="blur"></span>
                     <span class="blur"></span>
                     <a class="arrow" href=""><i class="fa-solid fa-arrow-up"></i></a>
-                    <h1>Contact<span> Me</span></h1>
+                    <h1>Contact<span> Me</span>
+                        <a id="social-contact-link" href="https://nl.linkedin.com/"><i class="ri-linkedin-line" id="social-contact-logo"></i></a>
+                    </h1>
                     <p>Feel free to reach out if you have any questions, inquiries, or just want to say hello. 
                     I'm here to help and provide information on any aspect of my work. I look forward to hearing from you.
                     </p>
-                    <p>Email: Thomas.vdv@hotmail.com</p>
-                    <p>Phone: +32 468 30 93 99</p>
+                </div>
+                <div class="col-md-6" id="contact-info">
+                    <div class="contact-info-container">
+                        <p>Thomas Van de Ven</p>
+                        <p>Field of study: Graduate degree in programming at Thomas More</p>
+                        <p>Country: Belgium</p>
+                        <p>Email: thomas.vdv@hotmail.com</p>
+                        <p>Phone: +32 468 30 93 99</p>
+                        <p>Discord <i class="ri-discord-line" id="social-contact-logo"></i> : Specia#3722</p>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
+    <section id="contact">
+        <form method="POST" action="#">
+            <div class="container2">
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="firstname" id="firstname" required>
+                            <label class="text" for="firstname">First name</label>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="lastname" id="lastname" required>
+                            <label class="text" for="lastname">Last name</label>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <label class="text" for="email">Email</label>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="subject" id="subject" required>
+                            <label class="text" for="subject">Subject</label>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox textarea">
+                            <textarea name="message" id="message" required></textarea>
+                            <label class="text" for="message">Type your message here...</label>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row100" id="select-container">
+                    <div class="col">
+                        <label class="select-text" for="skills">Give your interest of a skill of mine.</label>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <select name="skills" class="select-skills">
+                            <option value="webdevelopment">Web Development</option>
+                            <option value="programming">Programming</option>
+                            <option value="design">Design</option>
+                            <option value="dataanalysis">Data Analysis</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row100">
+                    <div class="col">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
     
-      <footer class="footcontainer">
+    <footer class="footcontainer">
         <div class="footer-content">
             <span class="blur"></span>
             <span class="blur"></span>
