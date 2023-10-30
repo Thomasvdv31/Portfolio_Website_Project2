@@ -389,8 +389,31 @@ footer .column > a:hover{
     border: 1px solid #1d4ed8;
 }
 
-#skillsCarousel h2{
+#slick-carousel-title h2{
     color: #ccc;
+}
+
+/* Style the carousel container */
+.slick-carousel {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative; /* Add this to establish a stacking context */
+}
+
+/* Style the images within the slides */
+.slick-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
 }
 
 /*------------------------------------------------------------ PROGRESS -------------------------------------------------------*/
@@ -845,7 +868,7 @@ select option {
 
 
 .position-relative{
-    width: 400px;
+    width: 350px;
     height: 150px;
     text-align: center;
     padding: 10px;
@@ -862,6 +885,7 @@ select option {
     top: -350px;
     z-index: 10;
     
+    
 }
 
 .carousel-control-prev-icon {
@@ -870,6 +894,15 @@ select option {
    
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231d4ed8' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-prev{
+    left: -20px;
+    top: -150px;
+}
+.carousel-control-next{
+    right: -20px;
+    top: -150px;
 }
 
 
